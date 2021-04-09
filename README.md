@@ -1,11 +1,4 @@
-# Simplest-Spring-Boot-Hello-World
-Simplest Spring Boot Hello World Example 
 
+Hello World Spring Boot Application.
 
-# Steps
-
-> git clone https://github.com/goxr3plus/Simplest-Spring-Boot-Hello-World.git
-
-> Run from your favourite IDE ( Eclipse , IntelliJ , Netbeans )
-
-ENJOY THE POWER OF A HELLO WORLD ! Welcome to Spring Boot :)
+Reference: https://github.com/goxr3plus/Simplest-Spring-Boot-Hello-World.git
