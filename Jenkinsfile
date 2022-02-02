@@ -6,19 +6,9 @@ pipeline {
                 git 'https://github.com/HRABOVENSKYI/HelloWorld-Springboot-App.git'     
             }
         }
-        stage ('maven test') {
+        stage ('create dockerimage') {
             steps {
-                bat 'mvn test'
-            }
-        }
-        stage ('maven build') {
-            steps {
-                bat 'mvn package'
-            }
-        }
-        stage ('maven deploy') {
-            steps {
-                echo "Deploying the war file to the server"
+                sh 'docker build -t springboot:latest .'     
             }
         }
     }
