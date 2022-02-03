@@ -8,13 +8,13 @@ pipeline {
         }
         stage ('maven build') {
             steps {
-                sh 'mvn package'     
+                bat 'mvn package'     
             }
         }
-//         stage ('create dockerimage') {
-//             steps {
-//                 sh 'docker build -t springboot:latest .'     
-//             }
-//         }
+        stage ('create dockerimage') {
+            steps {
+                bat 'docker build -t springboot:latest .'     
+            }
+        }
     }
 }
